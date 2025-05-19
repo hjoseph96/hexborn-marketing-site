@@ -5,7 +5,8 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from '@astrojs/tailwind';
 import { SITE } from './src/utils/config.ts';
-import netlify from '@astrojs/netlify/functions';
+import node from '@astrojs/node';
+
 import partytown from '@astrojs/partytown'
 
 import react from '@astrojs/react';
@@ -19,8 +20,14 @@ export default defineConfig({
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'server',
-  adapter: netlify(),
-
+  adapter: node({
+    mode: 'standalone'
+  }),
+  vite: {
+    ssr: {
+      noExternal: ["solid-use", "@xstate/svelte", 'whatwg-url']
+    }
+  },
   integrations: [tailwind(), partytown({
           config: {
             forward: ["dataLayer.push"],
