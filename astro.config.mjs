@@ -8,8 +8,6 @@ import { SITE } from './src/utils/config.ts';
 import netlify from '@astrojs/netlify/functions';
 import partytown from '@astrojs/partytown'
 
-import node from '@astrojs/node';
-
 import react from '@astrojs/react';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -21,9 +19,7 @@ export default defineConfig({
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'server',
-  adapter: node({
-    mode: 'standalone'
-  }),
+  adapter: netlify(),
 
   integrations: [tailwind(), partytown({
           config: {
