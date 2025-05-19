@@ -1,0 +1,9 @@
+/node_modules
+.DS_Store
+.netlify
+
+# build
+/dist
+
+# Env
+.env

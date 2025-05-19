@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom */
+.container {
+  margin: 0 auto;
+}
+
+.action-btn {
+  border-radius: 12px;
+  background: var(--Gradient, linear-gradient(124deg, #de0bc9 15.31%, #1286f0 86.86%));
+  padding: 24px 40px;
+}
+
+.text-input {
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  background: unset;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: white;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: Geomanist;
+  src: url('/assets/fonts/geomanist-regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('/assets/fonts/Lato-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('/assets/fonts/Lato-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('/assets/fonts/Lato-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('/assets/fonts/Lato-Thin.ttf');
+  font-weight: 100;
+}
+
+/* Animations  */
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bg-circle-pink {
+  0% {
+    transform: rotate(0deg) translate(500px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(500px) rotate(-360deg);
+  }
+}
+@keyframes bg-circle-blue {
+  0% {
+    transform: rotate(180deg) translate(500px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-180deg) translate(500px) rotate(180deg);
+  }
+}
+@keyframes heart-pink {
+  0% {
+    transform: rotate(0deg) translate(-200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-200px) rotate(-360deg);
+  }
+}
+@keyframes heart-blue {
+  0% {
+    transform: rotate(-180deg) translate(-200px) rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg) translate(-200px) rotate(-180deg);
+  }
+}

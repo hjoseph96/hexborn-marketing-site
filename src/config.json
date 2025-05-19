@@ -1,0 +1,35 @@
+{
+  "site": {
+    "name": "Senpai | Dating App for Anime Lovers",
+    "site": "https://senpaiapp.com",
+    "base": "/",
+    "trailingSlash": false,
+    "googleSiteVerificationId": "",
+    "launchDate": "07/12/2026"
+  },
+  "metadata": {
+    "title": {
+      "default": "Hexborn | Action RPG",
+      "template": "%s | Hexborn"
+    },
+    "description": "Hexborn is an upcoming 3D Action RPG about a mage with the rare ability to fly! Inspired by Hogwarts Legacy and",
+    "robots": {
+      "index": true,
+      "follow": true
+    },
+    "openGraph": {
+      "siteName": "Senpai | Dating App for Anime Lovers",
+      "images": {
+        "url": "~/assets/images/default.png",
+        "width": 1200,
+        "height": 628
+      },
+      "type": "website"
+    },
+    "twitter": {
+      "handle": "@senpai_app",
+      "site": "@senpai_app",
+      "cardType": "summary_large_image"
+    }
+  }
+}

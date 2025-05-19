@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Join from '../components/Join.astro';
+import Track from '../components/Track.astro';
+import Footer from '../components/Footer.astro';
+
+const metadata = {
+  title: 'Hexborn | Indie Action RPG',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <main class="overflow-hidden">
+
+    <Header />
+    <HowItWorks />
+    <!-- <Join /> -->
+    <!-- <Track /> -->
+    <hr class="color-white opacity-10" />
+    <Footer />
+  </main>
+</Layout>

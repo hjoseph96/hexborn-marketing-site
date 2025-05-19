@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+const metadata = {
+  title: 'Senpai | Dating App for Anime Lovers',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <main class="overflow-hidden">
+    <Header />
+
+    <form action="https://staging.senpaiapp.com/delete_my
+    _data">
+        <input type="text"  id="user_cell_phone" placeholder="Cell Phone Number">
+
+        <button type="submit"></button>
+
+    </form>
+  </main>
+</Layout>

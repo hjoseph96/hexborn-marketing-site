@@ -1,0 +1,584 @@
+---
+
+---
+
+<div class="step-container sm:p-12 p-0">
+  <div class="step-headers">
+    <div class="step-header-1">
+      <div class="text-neutral-200">Step 1</div>
+      <div class="h3 mt-4">Sign Up</div>
+    </div>
+    <div class="step-header-2 step-header">
+      <div class="text-neutral-200">Step 2</div>
+      <div class="h3 mt-4">Set your photos & bio</div>
+    </div>
+    <div class="step-header-3 step-header">
+      <div class="text-neutral-200">Step 3</div>
+      <div class="h3 mt-4">Set your Location</div>
+    </div>
+    <div class="step-header-4 step-header">
+      <div class="text-neutral-200">Step 4</div>
+      <div class="h3 mt-4">Pick your top 10 anime!</div>
+    </div>
+    <div class="step-header-5 step-header">
+      <div class="text-neutral-200">Step 5</div>
+      <div class="h3 mt-4">Get Verified</div>
+    </div>
+  </div>
+  <div class="step-content sm:h-[600px] h-[460px]">
+    <!-- Background -->
+    <!-- <img src="/assets/images/step-gradient.png" alt="step-bg" class="step-bg"> -->
+    <div class="absolute top-[200px] w-full flex justify-around">
+      <div class="step-bg-pink inline-block"></div>
+      <div class="step-bg-blue inline-block"></div>
+    </div>
+
+    <!-- Dot circles -->
+    <div class="step-dot-circle-1">
+      <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="300"
+          cy="300"
+          r="300"
+          stroke="url(#paint0_linear_482_91)"
+          stroke-width="0.919743"
+          stroke-dasharray="7.36 7.36"></circle>
+        <defs>
+          <linearGradient id="paint0_linear_482_91" x1="300" y1="0" x2="300" y2="600" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#DE0BC9"></stop>
+            <stop offset="1" stop-color="#1286F0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="step-dot-circle-2">
+      <svg width="460" height="460" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="230"
+          cy="230"
+          r="230"
+          stroke="url(#paint0_linear_482_91)"
+          stroke-width="0.919743"
+          stroke-dasharray="7.36 7.36"></circle>
+        <defs>
+          <linearGradient id="paint0_linear_482_91" x1="230" y1="0" x2="230" y2="460" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#DE0BC9"></stop>
+            <stop offset="1" stop-color="#1286F0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Devices -->
+    <div class="step-device-container sm:flex hidden">
+      <div class="step-device step-device-1 w-[280px]"></div>
+      <div class="step-device step-device-2 w-[240px]"></div>
+    </div>
+
+    <div class="step-device-container sm:hidden flex">
+      <div class="step-device step-mobile-device-1 w-[200px]"></div>
+      <div class="step-device step-mobile-device-2 w-[170px]"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .step-container {
+    .step-headers {
+      position: relative;
+      width: 100%;
+
+      .step-header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .step-dot-circle-1 {
+      animation: circle 48s linear infinite;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .step-dot-circle-2 {
+      animation: circle-reverse 48s linear infinite;
+      position: absolute;
+      top: 130px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .step-content {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+
+      .step-bg-pink {
+        width: 376.311px;
+        height: 315.039px;
+        transform: rotate(-38.088deg);
+        flex-shrink: 0;
+        border-radius: 376.311px;
+        background: rgba(222, 11, 201, 0.4);
+        filter: blur(214.0098876953125px);
+      }
+
+      .step-bg-blue {
+        width: 376.311px;
+        height: 315.039px;
+        transform: rotate(-38.088deg);
+        flex-shrink: 0;
+        border-radius: 376.311px;
+        background: rgba(18, 134, 240, 0.4);
+        filter: blur(214.0098876953125px);
+      }
+
+      .step-device-container {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .step-device {
+          position: absolute;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .step-header-1 {
+    animation: step-header-1 15s infinite;
+  }
+  .step-header-2 {
+    animation: step-header-2 15s infinite;
+  }
+  .step-header-3 {
+    animation: step-header-3 15s infinite;
+  }
+  .step-header-4 {
+    animation: step-header-4 15s infinite;
+  }
+  .step-header-5 {
+    animation: step-header-5 15s infinite;
+  }
+
+  @keyframes step-header-1 {
+    0% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    3% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    23% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes step-header-2 {
+    0% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    20% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    23% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    40% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    43% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes step-header-3 {
+    0% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    40% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    43% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    63% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes step-header-4 {
+    0% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    63% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    83% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes step-header-5 {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    3% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+    80% {
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    83% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  .step-device-1 {
+    top: 0;
+    animation: step-device-1 15s infinite;
+    z-index: 1;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+  .step-device-2 {
+    top: 45px;
+    animation: step-device-2 15s infinite;
+    z-index: 2;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes step-device-1 {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/device-1-1.png);
+    }
+    0.5% {
+      transform: translateX(50px);
+      opacity: 0;
+      z-index: 1;
+    }
+    3% {
+      transform: translateX(-100px);
+      opacity: 1;
+      z-index: 1;
+    }
+    20% {
+      transform: translateX(-100px);
+      opacity: 1;
+      z-index: 1;
+    }
+    20.1% {
+      transform: translateX(-100px);
+      z-index: 2;
+      background-image: url(/assets/devices/device-1-1.png);
+    }
+    23% {
+      transform: translateX(100px);
+      opacity: 1;
+      z-index: 2;
+      background-image: url(/assets/devices/device-2-1.png);
+    }
+    40% {
+      transform: translateX(100px);
+      opacity: 1;
+      background-image: url(/assets/devices/device-2-1.png);
+    }
+    43% {
+      transform: translateX(0);
+      opacity: 1;
+      background-image: url(/assets/devices/device-3.png);
+    }
+    60% {
+      opacity: 1;
+      background-image: url(/assets/devices/device-3.png);
+    }
+    63% {
+      opacity: 1;
+      background-image: url(/assets/devices/device-4.png);
+    }
+    80% {
+      opacity: 1;
+      background-image: url(/assets/devices/device-4.png);
+    }
+    83% {
+      opacity: 1;
+      background-image: url(/assets/devices/device-5.png);
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      z-index: 2;
+      background-image: url(/assets/devices/device-5.png);
+    }
+  }
+
+  @keyframes step-device-2 {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+      z-index: 2;
+      background-image: url(/assets/devices/device-1-2.png);
+    }
+    0.5% {
+      transform: translateX(250px);
+      opacity: 0;
+      z-index: 2;
+      background-image: url(/assets/devices/device-1-2.png);
+    }
+    3% {
+      transform: translateX(100px);
+      opacity: 1;
+      z-index: 2;
+    }
+    20% {
+      transform: translateX(100px);
+      opacity: 1;
+      z-index: 2;
+      background-image: url(/assets/devices/device-1-2.png);
+    }
+    20.1% {
+      transform: translateX(100px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/device-1-2.png);
+    }
+    23% {
+      transform: translateX(-120px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/device-2-2.png);
+    }
+    40% {
+      transform: translateX(-120px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/device-2-2.png);
+    }
+    43% {
+      transform: translateX(0);
+      opacity: 0;
+      background-image: url(/assets/devices/device-2-2.png);
+    }
+    60% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    63% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+  }
+
+  .step-mobile-device-1 {
+    top: 0;
+    animation: step-mobile-device-1 15s infinite;
+    z-index: 1;
+    background-repeat: no-repeat;
+  }
+  .step-mobile-device-2 {
+    top: 30px;
+    animation: step-mobile-device-2 15s infinite;
+    z-index: 2;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes step-mobile-device-1 {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/mobile-device-1-1.png);
+    }
+    0.5% {
+      transform: translateX(25px);
+      opacity: 0;
+      z-index: 1;
+    }
+    3% {
+      transform: translateX(-60px);
+      opacity: 1;
+      z-index: 1;
+    }
+    20% {
+      transform: translateX(-60px);
+      opacity: 1;
+      z-index: 1;
+    }
+    20.1% {
+      transform: translateX(-60px);
+      z-index: 2;
+      background-image: url(/assets/devices/mobile-device-1-1.png);
+    }
+    23% {
+      transform: translateX(60px);
+      opacity: 1;
+      z-index: 2;
+      background-image: url(/assets/devices/mobile-device-2-1.png);
+    }
+    40% {
+      transform: translateX(60px);
+      opacity: 1;
+      background-image: url(/assets/devices/mobile-device-2-1.png);
+    }
+    43% {
+      transform: translateX(0);
+      opacity: 1;
+      background-image: url(/assets/devices/mobile-device-3.png);
+    }
+    60% {
+      opacity: 1;
+      background-image: url(/assets/devices/mobile-device-3.png);
+    }
+    63% {
+      opacity: 1;
+      background-image: url(/assets/devices/mobile-device-4.png);
+    }
+    80% {
+      opacity: 1;
+      background-image: url(/assets/devices/mobile-device-4.png);
+    }
+    83% {
+      opacity: 1;
+      background-image: url(/assets/devices/mobile-device-5.png);
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      z-index: 2;
+      background-image: url(/assets/devices/mobile-device-5.png);
+    }
+  }
+
+  @keyframes step-mobile-device-2 {
+    0% {
+      transform: translateX(150px);
+      opacity: 0;
+      z-index: 2;
+      background-image: url(/assets/devices/mobile-device-1-2.png);
+    }
+    0.5% {
+      transform: translateX(200px);
+      opacity: 0;
+      z-index: 2;
+      background-image: url(/assets/devices/mobile-device-1-2.png);
+    }
+    3% {
+      transform: translateX(80px);
+      opacity: 1;
+      z-index: 2;
+    }
+    20% {
+      transform: translateX(80px);
+      opacity: 1;
+      z-index: 2;
+      background-image: url(/assets/devices/mobile-device-1-2.png);
+    }
+    20.1% {
+      transform: translateX(80px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/mobile-device-1-2.png);
+    }
+    23% {
+      transform: translateX(-80px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/mobile-device-2-2.png);
+    }
+    40% {
+      transform: translateX(-80px);
+      opacity: 1;
+      z-index: 1;
+      background-image: url(/assets/devices/mobile-device-2-2.png);
+    }
+    43% {
+      transform: translateX(0);
+      opacity: 0;
+      background-image: url(/assets/devices/mobile-device-2-2.png);
+    }
+    60% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    63% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+  }
+</style>
