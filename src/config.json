@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Senpai | Dating App for Anime Lovers",
+    "name": "Hexborn | Indie Action RPG",
     "site": "https://senpaiapp.com",
     "base": "/",
     "trailingSlash": false,
@@ -18,18 +18,13 @@
       "follow": true
     },
     "openGraph": {
-      "siteName": "Senpai | Dating App for Anime Lovers",
+      "siteName": "Hexborn | Action RPG",
       "images": {
         "url": "~/assets/images/default.png",
         "width": 1200,
         "height": 628
       },
       "type": "website"
-    },
-    "twitter": {
-      "handle": "@senpai_app",
-      "site": "@senpai_app",
-      "cardType": "summary_large_image"
     }
   }
 }
