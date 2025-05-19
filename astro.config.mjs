@@ -18,7 +18,7 @@ export default defineConfig({
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
-  output: 'server',
+  output: 'static',
   adapter: netlify(),
 
   integrations: [tailwind(), partytown({
