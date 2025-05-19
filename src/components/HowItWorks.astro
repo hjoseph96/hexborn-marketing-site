@@ -6,8 +6,6 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import '@splidejs/react-splide/css';
 ---
 
-
-
 <div class="how-it-works">
   <div class="container text-center sm:p-24 px-4 py-20">
     <div class="h2">Gameplay Footage</div>
@@ -18,13 +16,13 @@ import '@splidejs/react-splide/css';
 
     <div class="container">
       <Splide
-        options={ {
+        options={{
             rewind : true,
             perPage: 1,
             perMove: 1,
             gap    : '1rem',
             
-        } }>
+        }}>
             <SplideSlide>
                 <Vimeo posterQuality="max" id="https://vimeo.com/1085561038" />
             </SplideSlide>
