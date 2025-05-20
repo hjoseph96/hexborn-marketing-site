@@ -4,6 +4,13 @@ import plugin from 'tailwindcss/plugin';
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    screens: {
+      'xs': '420px',
+      'sm': '640px',
+      'md': '960px',
+      'lg': '1200px',
+      'xl': '1440px',
+    },
     extend: {
       colors: {
         neutral: {
