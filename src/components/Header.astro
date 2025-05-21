@@ -7,17 +7,17 @@ const { months, days, hours } = calculateLaunchDate(launchDate);
 let launched = months == days && days == hours && hours == 0;
 ---
 
-<div class="header sm:h-[885px] h-[820px]">
+<div class="header max-xs:h-[660px] sm:h-[885px] md:h-[920px] lg:h-[850px] h-[820px]">
   <div class="header-bg-pink absolute sm:top-[400px] sm:left-[400px] top-[300px] left-[100px]"></div>
   <div class="header-bg-blue absolute sm:top-[400px] sm:left-[400px] top-[300px] left-[100px]"></div>
 
   <div class="content h-full flex flex-col w-full">
-    <div style="position: absolute;">
-      <img src="/assets/images/makeshift-logo.png" alt="logo" width={400} />
+    <div class="absolute w-full">
+      <img src="/assets/images/makeshift-logo.png" alt="logo" width={400} class="max-lg:mx-auto" />
     </div>
     <div class="flex flex-grow sm:flex-row flex-col justify-between w-full">
       <div class="w-full relative">
-        <div class="absolute left-0 w-full text-center mt-4 z-50">
+        <div class="absolute left-0 w-full text-center mt-4 z-50 max-lg:top-[100px]">
           <div class="max-w-[528px] mx-auto flex-col p-4 sm:p-0">
             <div class="h1 font-bold mt-2 gametitle">
               <img src="/assets/images/hexborn-logo.png"" alt="Hexborn Text Logo" \>
@@ -33,21 +33,21 @@ let launched = months == days && days == hours && hours == 0;
               !launched && (
                 <div>
                   <div class="flex items-center justify-between sm:mt-12 mt-8">
-                    <div class="timer-container w-[110px] py-4 px-2 sm:w-[160px] sm:p-[16px]">
-                      <div class="txt-extra">{months}</div>
-                      <div class="title2 sm:mt-6 mt-2">
+                    <div class="timer-container w-[110px] py-4 px-2 max-xs:w-[80px] xs:w-[100px] sm:w-[160px] sm:p-[16px]">
+                      <div class="txt-extra max-xs:text-lg">{months}</div>
+                      <div class="title2 max-xs:text-sm sm:mt-6 mt-2">
                         { months > 1 ? "MONTHS" : "MONTH" }
                       </div>
                     </div>
-                    <div class="timer-container w-[110px] py-4 px-2 sm:w-[160px] sm:p-[16px]">
-                      <div class="txt-extra">{days}</div>
-                      <div class="title2 sm:mt-6 mt-2">
+                    <div class="timer-container w-[110px] py-4 px-2 max-xs:w-[80px] xs:w-[100px] sm:w-[160px] sm:p-[16px]">
+                      <div class="txt-extra max-xs:text-lg">{days}</div>
+                      <div class="title2 max-xs:text-sm sm:mt-6 mt-2">
                         { days > 1 ? "DAYS" : "DAY" }
                       </div>
                     </div>
-                    <div class="timer-container w-[110px] py-4 px-2 sm:w-[160px] sm:p-[16px]">
-                      <div class="txt-extra">{hours}</div>
-                      <div class="title2 sm:mt-6 mt-2">
+                    <div class="timer-container w-[110px] py-4 px-2 max-xs:w-[80px] xs:w-[100px] sm:w-[160px] sm:p-[16px]">
+                      <div class="txt-extra max-xs:text-lg">{hours}</div>
+                      <div class="title2 max-xs:text-sm sm:mt-6 mt-2">
                         { hours > 1 ? "HOURS" : "HOUR" }
                       </div>
                     </div>
